@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #fffdfd;
+    background-image: url('https://i.imgur.com/zMVCVSl.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #262626;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.logo-img {
+    width: 300px;
+    height: auto;
+}
+
+.logo-imgg {
+    width: 150px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 10px;
+}
+
+header nav ul li a.nav-btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #444444;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+header nav ul li a.nav-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.user-panel .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 17px 20px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.user-panel .btn:hover {
+    background-color: #54a6fa;
+    color: #ffffff;
+}
+
+.main-banner {
+    background-image: url('https://sa-sd.ru/home/head-image.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-banner .banner-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.main-banner .btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.primary-btn {
+    background-color: #ff0000;
+}
+
+.primary-btn:hover {
+    background-color: #cc0000;
+}
+
+.secondary-btn {
+    background-color: #0546de;
+}
+
+.secondary-btn:hover {
+    background-color: #021d5d;
+}
+
+.how-to-play {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-to-play .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.how-to-play .step {
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 30px;
+    flex-basis: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.how-to-play .step h3 {
+    margin-top: 0;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.how-to-play .step .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(0, 101, 210);
+    padding: 15px 25px;
+    border-radius: 17px;
+    display: inline-block;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.how-to-play .step a.btn:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.about-project {
+    background-color: rgb(35, 35, 35);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-project h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text h3,
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.useful-info {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #262626;
+}
+
+.useful-info h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+.info-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.info-card .info-text {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info-card .subtext {
+    font-size: 14px;
+    color: #999;
+}
+
+.police-car {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.police-car img {
+    width: 80%;
+    max-width: 600px;
+}
+
+.official-group {
+    background-color: #e53935;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.official-group p {
+    margin: 10px 0;
+}
+
+.official-group button {
+    background-color: #fff;
+    color: #e53935;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #262626;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+    .main-banner .banner-content h2 {
+        font-size: 2em;
+    }
+
+    .how-to-play .step {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-project h2 {
+        font-size: 28px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .videos {
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 100%;
+    }
+
+    .police-car img {
+        width: 100%;
+    }
+
+    .logo-img {
+        width: 200px;
+    }
+
+    .logo h1 {
+        font-size: 1.2em;
+    }
+}

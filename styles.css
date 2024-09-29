@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    background-image: url('https://i.imgur.com/xP2k0z7.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #262626;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Позволяет переносить элементы на новую строку */
+}
+
+.logo img {
+    height: 150px;
+}
+
+header .user-panel .btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-panel .btn:hover {
+    background-color: #54a6fa;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Переносит элементы на новую строку при необходимости */
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+nav ul li a.nav-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #444444;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.nav-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+main {
+    padding: 20px;
+}
+
+.faq {
+    background-color: rgba(68, 68, 68, 0.96);
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.faq h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.faq article {
+    margin-bottom: 20px;
+}
+
+.faq h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.faq p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.faq a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #262626;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 100px; /* Уменьшаем размер логотипа на мобильных устройствах */
+    }
+
+    .faq {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .faq h1 {
+        font-size: 28px;
+    }
+
+    .faq h2 {
+        font-size: 20px;
+    }
+
+    .faq p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
